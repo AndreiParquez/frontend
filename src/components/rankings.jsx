@@ -50,11 +50,11 @@ const Rankings = () => {
     };
 
     return (
-        <div className="flex bg-orange-600 text-white justify-center md:px-28">
+        <div className="flex bg-orange-600 text-white  p-4 md:px-28">
             {/* Main content */}
             <div className="flex-grow p-2 md:mt-20 mt-16">
                 {/* Add your main content here */}
-                <div className="blue shadow-md rounded-md p-4 md:p-6  lg:max-w-full md:max-w-[600px]">
+                <div className="blue shadow-md rounded-md p-4 md:p-6 sm:w-[300px] w-[450px] lg:w-full md:w-[600px]">
                     <nav className="mb-4 w-full">
                         <ul className="flex justify-start md:justify-between space-x-4 overflow-x-auto whitespace-nowrap text-sm text-white max-w-[335px] md:max-w-[600px] lg:max-w-full">
                             <li className="flex-shrink-0 border-b-4 border-b-orange-600"><a href="#">All Categories</a></li>

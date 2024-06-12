@@ -50,23 +50,19 @@ const Rankings = () => {
     };
 
     return (
-        <div className="flex bg-orange-600 text-white  p-4 md:px-28">
+        <div className="flex bg-orange-600 text-white px-2 p-4 md:px-28">
             {/* Main content */}
-            <div className="flex-grow p-2 md:mt-20 mt-16">
+            <div className="flex-grow p-2 md:mt-20 mt-16 justify-center">
                 {/* Add your main content here */}
-                <div className="blue shadow-md rounded-md p-4 md:p-6 sm:w-[300px] w-[450px] lg:w-full md:w-[600px]">
+                <div className="blue shadow-md rounded-md p-4 flex-grow md:p-6 ">
                     <nav className="mb-4 w-full">
-                        <ul className="flex justify-start md:justify-between space-x-4 overflow-x-auto whitespace-nowrap text-sm text-white max-w-[335px] md:max-w-[600px] lg:max-w-full">
+                        <ul className="flex justify-start md:justify-between space-x-4 overflow-x-auto whitespace-nowrap text-sm text-white ">
                             <li className="flex-shrink-0 border-b-4 border-b-orange-600"><a href="#">All Categories</a></li>
                             <li className="flex-shrink-0"><a href="#">Games</a></li>
                             <li className="flex-shrink-0"><a href="#">DeFi</a></li>
                             <li className="flex-shrink-0"><a href="#">Gaming</a></li>
-                            <li className="flex-shrink-0"><a href="#">Exchange</a></li>
-                            <li className="flex-shrink-0"><a href="#">Collectible</a></li>
-                            <li className="flex-shrink-0"><a href="#">Marketplaces</a></li>
-                            <li className="flex-shrink-0"><a href="#" >Social</a></li>
-                            <li className="flex-shrink-0"><a href="#" >Other</a></li>
-                            <li className="flex-shrink-0"><a href="#">High risk</a></li>
+                            
+                          
                         </ul>
                     </nav>
 
@@ -84,7 +80,7 @@ const Rankings = () => {
                         </div>
                     </div>
         
-                    <div className="overflow-x-auto max-w-[435px] lg:max-w-full md:max-w-[600px]">
+                    <div className="overflow-x-auto max-w-[335px] lg:max-w-full md:max-w-[600px]">
                         <table className="md:w-full w-[600px] md:text-sm text-xs">
                             <thead className="mb-20">
                                 <tr className="border-y-2 border-indigo-100">

@@ -50,7 +50,7 @@ const Rankings = () => {
     };
 
     return (
-        <div className="flex bg-orange-600 text-white px-2 p-4 md:px-28">
+        <div className="flex bg-orange-500 text-white px-1 p-4 md:px-28">
             {/* Main content */}
             <div className="flex-grow p-2 md:mt-20 mt-16 justify-center">
                 {/* Add your main content here */}
@@ -80,7 +80,7 @@ const Rankings = () => {
                         </div>
                     </div>
         
-                    <div className="overflow-x-auto max-w-[335px] lg:max-w-full md:max-w-[600px]">
+                    <div className="overflow-x-auto max-w-[335px] sm:max-w-[100px] lg:max-w-full md:max-w-full">
                         <table className="md:w-full w-[600px] md:text-sm text-xs">
                             <thead className="mb-20">
                                 <tr className="border-y-2 border-indigo-100">

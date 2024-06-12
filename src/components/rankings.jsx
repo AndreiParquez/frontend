@@ -13,7 +13,12 @@ import tlogo from '../assets/images.png';
 const Rankings = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [selectedImage, setSelectedImage] = useState(null);
-    const images = [image2, image3, image4, image5];
+    const images = [
+        { src: image2, title: 'Game 1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam,' },
+        { src: image3, title: 'Game 2', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam,' },
+        { src: image4, title: 'Game 3', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam,' },
+        { src: image5, title: 'Game 4', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam,' }
+    ];
 
     const handlePrevClick = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
@@ -24,7 +29,7 @@ const Rankings = () => {
     };
 
     const handleImageClick = (image) => {
-        setSelectedImage(image);
+        setSelectedImage(image.src);
     };
 
     const closeImageView = () => {
@@ -45,171 +50,158 @@ const Rankings = () => {
     };
 
     return (
-        <div className="flex">
-            {/* Sidebar */}
-            <div className="fixed top-16 left-0 h-full .blue text-white overflow-y-auto sidebar">
-                <ul className="w-16 md:w-56 flex flex-col items-center md:items-center py-4">
-                    <li className="flex items-center p-3">
-                        <CgGames className="text-2xl md:text-3xl mr-0 md:mr-2" />
-                        <span className="hidden md:inline">Games</span>
-                    </li>
-                    {/* Add more sidebar items as needed */}
-                </ul>
-            </div>
-
+        <div className="flex bg-orange-600 text-white md:px-28">
             {/* Main content */}
-            <div className="flex-grow ml-16 md:ml-56 md:p-4 p-2 md:mt-20 mt-16">
+            <div className="flex-grow p-2 md:mt-20 mt-16">
                 {/* Add your main content here */}
-                <div className="bg-white shadow-md rounded-md p-4 md:p-6">
-                    <h2 className="md:text-2xl text-sm font-bold mb-2 md:mb-4">
-                        Unveil the <span className="text-yellow-300">space</span>, Explore the <span className="text-orange-300">dApps</span>
-                    </h2>
+                <div className="blue shadow-md rounded-md p-4 md:p-6 max-w-[435px] lg:max-w-full md:max-w-[600px]">
+                    <nav className="mb-4 w-full">
+                        <ul className="flex justify-start md:justify-between space-x-4 overflow-x-auto whitespace-nowrap text-sm text-white max-w-[335px] md:max-w-[600px] lg:max-w-full">
+                            <li className="flex-shrink-0 border-b-4 border-b-orange-600"><a href="#">All Categories</a></li>
+                            <li className="flex-shrink-0"><a href="#">Games</a></li>
+                            <li className="flex-shrink-0"><a href="#">DeFi</a></li>
+                            <li className="flex-shrink-0"><a href="#">Gaming</a></li>
+                            <li className="flex-shrink-0"><a href="#">Exchange</a></li>
+                            <li className="flex-shrink-0"><a href="#">Collectible</a></li>
+                            <li className="flex-shrink-0"><a href="#">Marketplaces</a></li>
+                            <li className="flex-shrink-0"><a href="#" >Social</a></li>
+                            <li className="flex-shrink-0"><a href="#" >Other</a></li>
+                            <li className="flex-shrink-0"><a href="#">High risk</a></li>
+                        </ul>
+                    </nav>
+
                     {/* Search bar */}
-                    <div className="flex items-center mb-4">
+                    <div className="flex items-center mb-4 text-sm">
                         <div className="relative">
                             <input
                                 type="text"
                                 placeholder="Search..."
-                                className="w-full pl-10 pr-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
+                                className="w-full p-4 pr-4 py-2 blue rounded-md border border-gray-300 focus:outline-none focus:border-blue-500"
                             />
-                            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                <AiOutlineSearch className="h-5 w-5 text-gray-400" />
+                            <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                <AiOutlineSearch className="h-5 w-5 text-white" />
                             </div>
                         </div>
                     </div>
-                    <h2 className="md:text-xl text-sm font-semibold mb-2 md:mb-4">Top blockchain games</h2>
-                    <p className="text-gray-700 text-sm">This is a sample card content. You can add any content here.</p>
-                    <div className="overflow-x-auto">
-                        <table className="w-full table-auto text-sm">
-                            <thead className="mb-10">
-                                <tr className="border-b-4 border-indigo-300">
-                                    <th className="text-sm fon">Rankings</th>
+        
+                    <div className="overflow-x-auto max-w-[435px] lg:max-w-full md:max-w-[600px]">
+                        <table className="md:w-full w-[600px] md:text-sm text-xs">
+                            <thead className="mb-20">
+                                <tr className="border-y-2 border-indigo-100">
+                                    <th className='p-2'>Rank</th>
                                     <th>Name</th>
-                                    <th>Token Logo</th>
-                                    <th>Token Price</th>
+                                    <th>Blockchain</th>
+                                    <th>UAW</th>
+                                    <th>UAW%</th>
+                                    <th>Volume</th>
+                                    <th>24hour UAW</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td className="flex justify-center items-center">
-                                        1. <img src={logo} alt="Game Logo" className="w-8 h-8" />
+                                <tr className="border-b-4 border-indigo-300 py-4">
+                                    <td className="text-center font-bold">1.</td>
+                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-10" />Axie Infinity</td>
+                                    <td className="text-center">Etheruim</td>
+                                    <td className="text-center">116k</td>
+                                    <td className="text-center">1.6m</td>
+                                    <td className="text-center text-red-600">-1.6m</td>
+                                    <td className="flex justify-center">
+                                        <svg viewBox="0 0 200 100" className="w-16 h-8">
+                                            <polyline points="0,80 20,50 40,30 60,40 80,60 100,20 120,40 140,40 160,60 180,80 200,90" fill="none" stroke="white" strokeWidth="4" />
+                                        </svg>
                                     </td>
-                                    <td className="text-center">Axie Infinity</td>
-                                    <td className="flex justify-center items-center">
-                                        <img src={tlogo} alt="Token Logo" className="w-8 h-8" />
-                                    </td>
-                                    <td className="text-center">$10</td>
                                 </tr>
-                                <tr>
-                                    <td className="flex justify-center items-center">
-                                        2. <img src={logo} alt="Game Logo" className="w-8 h-8" />
+                                <tr className="border-b-4 border-indigo-300 py-4">
+                                    <td className="text-center font-bold">2.</td>
+                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-10" />Axie Infinity</td>
+                                    <td className="text-center">Etheruim</td>
+                                    <td className="text-center">116k</td>
+                                    <td className="text-center">1.6m</td>
+                                    <td className="text-center text-red-600">-1.6m</td>
+                                    <td className="flex justify-center">
+                                        <svg viewBox="0 0 200 100" className="w-16 h-8">
+                                            <polyline points="0,80 20,50 40,30 60,40 80,60 100,20 120,40 140,40 160,60 180,80 200,90" fill="none" stroke="white" strokeWidth="4" />
+                                        </svg>
                                     </td>
-                                    <td className="text-center">Axie Infinity</td>
-                                    <td className="flex justify-center items-center">
-                                        <img src={tlogo} alt="Token Logo" className="w-8 h-8" />
-                                    </td>
-                                    <td className="text-center">$10</td>
                                 </tr>
-                                <tr>
-                                    <td className="flex justify-center items-center">
-                                        3. <img src={logo} alt="Game Logo" className="w-8 h-8" />
+                                <tr className="border-b-4 border-indigo-300 py-4">
+                                    <td className="text-center font-bold">3.</td>
+                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-10" />Axie Infinity</td>
+                                    <td className="text-center">Etheruim</td>
+                                    <td className="text-center">116k</td>
+                                    <td className="text-center">1.6m</td>
+                                    <td className="text-center text-red-600">-1.6m</td>
+                                    <td className="flex justify-center">
+                                        <svg viewBox="0 0 200 100" className="w-16 h-8">
+                                            <polyline points="0,80 20,50 40,30 60,40 80,60 100,20 120,40 140,40 160,60 180,80 200,90" fill="none" stroke="white" strokeWidth="4" />
+                                        </svg>
                                     </td>
-                                    <td className="text-center">Axie Infinity</td>
-                                    <td className="flex justify-center items-center">
-                                        <img src={tlogo} alt="Token Logo" className="w-8 h-8" />
+                                </tr>
+                                <tr className="border-b-4 border-indigo-300 py-4">
+                                    <td className="text-center font-bold">4.</td>
+                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-10" />Axie Infinity</td>
+                                    <td className="text-center">Etheruim</td>
+                                    <td className="text-center">116k</td>
+                                    <td className="text-center">1.6m</td>
+                                    <td className="text-center text-red-600">-1.6m</td>
+                                    <td className="flex justify-center">
+                                        <svg viewBox="0 0 200 100" className="w-16 h-8">
+                                            <polyline points="0,80 20,50 40,30 60,40 80,60 100,20 120,40 140,40 160,60 180,80 200,90" fill="none" stroke="white" strokeWidth="4" />
+                                        </svg>
                                     </td>
-                                    <td className="text-center">$10</td>
+                                </tr>
+                                <tr className="border-b-4 border-indigo-300 py-4">
+                                    <td className="text-center font-bold">5.</td>
+                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-10" />Axie Infinity</td>
+                                    <td className="text-center">Etheruim</td>
+                                    <td className="text-center">116k</td>
+                                    <td className="text-center">1.6m</td>
+                                    <td className="text-center text-red-600">-1.6m</td>
+                                    <td className="flex justify-center">
+                                        <svg viewBox="0 0 200 100" className="w-16 h-8">
+                                            <polyline points="0,80 20,50 40,30 60,40 80,60 100,20 120,40 140,40 160,60 180,80 200,90" fill="none" stroke="white" strokeWidth="4" />
+                                        </svg>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
 
-                <div className="bg-white shadow-md rounded-md p-4 md:p-6 my-3">
-                    <h2 className="md:text-xl text-sm font-semibold mb-2 md:mb-4">Featured Game</h2>
+                <div className="rounded-md p-4 md:p-6">
+    <h2 className="text-sm md:text-xl text-black font-semibold mb-2 md:mb-4">Featured Games</h2>
+    <div className="relative">
+        <button
+            onClick={handlePrevClick}
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-300 rounded-full shadow-md focus:outline-none z-10"
+        >
+            <AiOutlineLeft />
+        </button>
+        <div className="flex overflow-x-auto md:overflow-hidden transition-transform duration-500 ease-in-out transform">
+            {displayedImages().map((image, index) => (
+                <div key={index} className="flex-shrink-0 w-[90vw] md:w-72 lg:w-96 m-2">
                     <img
-                        src={featuredGameScreenshot}
-                        alt="Featured Game Screenshot"
-                        className="md:w-3/4 rounded-md md:mx-36 mb-2"
-                        onClick={() => handleImageClick(featuredGameScreenshot)}
+                        src={image.src}
+                        alt={`Carousel Image ${index}`}
+                        className="w-full rounded-xl md:min-h-[240px]"
+                        onClick={() => handleImageClick(image)}
                     />
-                    <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-                        <img src={image2} alt="Image 2" className="rounded-md" onClick={() => handleImageClick(image2)} />
-                        <img src={image3} alt="Image 3" className="rounded-md" onClick={() => handleImageClick(image3)} />
-                        <img src={image4} alt="Image 4" className="rounded-md" onClick={() => handleImageClick(image4)} />
-                        <img src={image5} alt="Image 5" className="rounded-md" onClick={() => handleImageClick(image5)} />
-                    </div>
+                    <h3 className="text-sm font-semibold mt-2 text-black text-center">{image.title}</h3>
+                    <p className="text-xs text-black text-center">{image.description}</p>
                 </div>
-
-                <div className="bg-white shadow-md rounded-md p-4 md:p-6">
-                    <h2 className="md:text-xl text-sm font-semibold mb-2 md:mb-4">Featured Games</h2>
-                    <div className="relative">
-                        <button
-                            onClick={handlePrevClick}
-                            className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-300 rounded-full shadow-md focus:outline-none z-10"
-                        >
-                            <AiOutlineLeft />
-                        </button>
-                        <div className="flex transition-transform duration-500 ease-in-out transform">
-                            {displayedImages().map((image, index) => (
-                                <img
-                                    key={index}
-                                    src={image}
-                                    alt={`Carousel Image ${index}`}
-                                    className="w-full md:w-96 rounded-md md:m-2"
-                                    onClick={() => handleImageClick(image)}
-                                />
-                            ))}
-                        </div>
-                        <button
-                            onClick={handleNextClick}
-                            className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-300 rounded-full shadow-md focus:outline-none"
-                        >
-                            <AiOutlineRight />
-                        </button>
-                    </div>
-                </div>
+            ))}
+        </div>
+        <button
+            onClick={handleNextClick}
+            className="absolute right-0 md:right-7 top-1/2 transform -translate-y-1/2 p-2 bg-gray-300 rounded-full shadow-md focus:outline-none"
+        >
+            <AiOutlineRight />
+        </button>
+    </div>
+</div>
 
 
-
-                 {/* Two-column layout for desktop, single-column for mobile */}
-                 <div className="bg-white shadow-md rounded-md p-4 md:p-6 mb-3 mt-3 flex flex-col md:flex-row">
-                    {/* Big card on the left */}
-                    <div className="md:w-2/3 md:pr-4 mb-4 md:mb-0">
-                        <div className="bg-gray-200 rounded-md p-4 h-full">
-                            <h3 className="text-sm md:text-lg font-semibold mb-2">Big Card</h3>
-                            <p>This is a big card. Add your content here.</p>
-                        </div>
-                    </div>
-                    {/* Three smaller cards on the right */}
-                    <div className="md:w-1/3 flex flex-col space-y-4">
-                        <div className="bg-gray-200 rounded-md p-4">
-                            <h3 className="md:text-lg text-sm font-semibold mb-2">Recently Added</h3>
-                            <p>This is a small card. Add your content here.</p>
-                        </div>
-                        <div className="bg-gray-200 rounded-md p-4">
-                            <h3 className="md:text-lg text-sm font-semibold mb-2">Best Rated</h3>
-                            <p>This is a small card. Add your content here.</p>
-                        </div>
-                        <div className="bg-gray-200 rounded-md p-4">
-                            <h3 className="md:text-lg text-sm font-semibold mb-2">Most Popular</h3>
-                            <p>This is a small card. Add your content here.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+                
 
                 {selectedImage && (
                     <div

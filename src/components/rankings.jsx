@@ -54,7 +54,7 @@ const Rankings = () => {
             {/* Main content */}
             <div className="flex-grow p-2 md:mt-20 mt-16">
                 {/* Add your main content here */}
-                <div className="blue shadow-md rounded-md p-4 md:p-6 max-w-[435px] lg:max-w-full md:max-w-[600px]">
+                <div className="blue shadow-md rounded-md p-4 md:p-6 max-w-[375px] lg:max-w-full md:max-w-[600px]">
                     <nav className="mb-4 w-full">
                         <ul className="flex justify-start md:justify-between space-x-4 overflow-x-auto whitespace-nowrap text-sm text-white max-w-[335px] md:max-w-[600px] lg:max-w-full">
                             <li className="flex-shrink-0 border-b-4 border-b-orange-600"><a href="#">All Categories</a></li>
@@ -84,7 +84,7 @@ const Rankings = () => {
                         </div>
                     </div>
         
-                    <div className="overflow-x-auto max-w-[435px] lg:max-w-full md:max-w-[600px]">
+                    <div className="overflow-x-auto max-w-[335px] lg:max-w-full md:max-w-[600px]">
                         <table className="md:w-full w-[600px] md:text-sm text-xs">
                             <thead className="mb-20">
                                 <tr className="border-y-2 border-indigo-100">
@@ -169,36 +169,36 @@ const Rankings = () => {
                 </div>
 
                 <div className="rounded-md p-4 md:p-6">
-    <h2 className="text-sm md:text-xl text-black font-semibold mb-2 md:mb-4">Featured Games</h2>
-    <div className="relative">
-        <button
-            onClick={handlePrevClick}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-300 rounded-full shadow-md focus:outline-none z-10"
-        >
-            <AiOutlineLeft />
-        </button>
-        <div className="flex overflow-x-auto md:overflow-hidden transition-transform duration-500 ease-in-out transform">
-            {displayedImages().map((image, index) => (
-                <div key={index} className="flex-shrink-0 w-[90vw] md:w-72 lg:w-96 m-2">
-                    <img
-                        src={image.src}
-                        alt={`Carousel Image ${index}`}
-                        className="w-full rounded-xl md:min-h-[240px]"
-                        onClick={() => handleImageClick(image)}
-                    />
-                    <h3 className="text-sm font-semibold mt-2 text-black text-center">{image.title}</h3>
-                    <p className="text-xs text-black text-center">{image.description}</p>
+                    <h2 className="text-sm md:text-xl text-black font-semibold mb-2 md:mb-4">Featured Games</h2>
+                    <div className="relative">
+                        <button
+                            onClick={handlePrevClick}
+                            className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-300 rounded-full shadow-md focus:outline-none z-10"
+                        >
+                            <AiOutlineLeft />
+                        </button>
+                        <div className="flex overflow-x-auto md:overflow-hidden transition-transform duration-500 ease-in-out transform">
+                            {displayedImages().map((image, index) => (
+                                <div key={index} className="flex-shrink-0 w-[85vw] md:w-72 lg:w-96 m-2">
+                                    <img
+                                        src={image.src}
+                                        alt={`Carousel Image ${index}`}
+                                        className="w-full rounded-xl md:min-h-[240px]"
+                                        onClick={() => handleImageClick(image)}
+                                    />
+                                    <h3 className="text-sm font-semibold mt-2 text-black text-center">{image.title}</h3>
+                                    <p className="text-xs text-black text-center">{image.description}</p>
+                                </div>
+                            ))}
+                        </div>
+                        <button
+                            onClick={handleNextClick}
+                            className="absolute right-0 md:right-7 top-1/2 transform -translate-y-1/2 p-2 bg-gray-300 rounded-full shadow-md focus:outline-none"
+                        >
+                            <AiOutlineRight />
+                        </button>
+                    </div>
                 </div>
-            ))}
-        </div>
-        <button
-            onClick={handleNextClick}
-            className="absolute right-0 md:right-7 top-1/2 transform -translate-y-1/2 p-2 bg-gray-300 rounded-full shadow-md focus:outline-none"
-        >
-            <AiOutlineRight />
-        </button>
-    </div>
-</div>
 
 
                 

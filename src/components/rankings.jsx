@@ -80,7 +80,7 @@ const Rankings = () => {
                         </div>
                     </div>
         
-                    <div className="overflow-x-auto max-w-[100%] sm:max-w-[445px] lg:max-w-full">
+                    <div className="overflow-x-auto max-w-[100%] sm:max-w-[445px] md:max-w-full lg:max-w-full">
                         <table className="w-full md:text-sm text-[8px]">
                             <thead className="mb-20">
                                 <tr className="border-y-2 border-indigo-100">
@@ -163,6 +163,42 @@ const Rankings = () => {
                         </table>
                     </div>
                 </div>
+
+                <div className="rounded-md p-2 md:p-2">
+                    <h2 className="md:text-xl text-sm text-black font-semibold mb-2 md:mb-4">Featured Games</h2>
+                    <div className="relative">
+                        <button
+                        onClick={handlePrevClick}
+                        className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-300 rounded-full shadow-md focus:outline-none z-10"
+                        >
+                        <AiOutlineLeft />
+                        </button>
+                        <div className="flex overflow-x-auto md:overflow-hidden transition-transform duration-500 ease-in-out transform">
+                        {displayedImages().map((image, index) => (
+                            <div key={index} className="flex-shrink-0 w-full md:w-[175px] lg:w-80 xl:w-90 2xl:w-[410px] m-2">
+
+                            <img
+                                src={image.src}
+                                alt={`Carousel Image ${index}`}
+                                className="w-full rounded-xl md:max-h-[240px] lg:max-h-[240px]"
+                                onClick={() => handleImageClick(image)}
+                            />
+                            <h3 className="text-sm font-semibold mt-2 text-black text-center">{image.title}</h3>
+                            <p className="text-xs text-black text-center">{image.description}</p>
+                            </div>
+                        ))}
+                        </div>
+                        <button
+                        onClick={handleNextClick}
+                        className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-300 rounded-full shadow-md focus:outline-none z-10"
+                        >
+                        <AiOutlineRight />
+                        </button>
+                    </div>
+                    </div>
+
+
+                
 
                 
 

@@ -80,8 +80,8 @@ const Rankings = () => {
                         </div>
                     </div>
         
-                    <div className="overflow-x-auto max-w-[335px] sm:max-w-[100px] lg:max-w-full md:max-w-full">
-                        <table className="md:w-full w-[600px] md:text-sm text-xs">
+                    <div className="overflow-x-auto max-w-[100%] sm:max-w-[445px] lg:max-w-full">
+                        <table className="w-full md:text-sm text-[8px]">
                             <thead className="mb-20">
                                 <tr className="border-y-2 border-indigo-100">
                                     <th className='p-2'>Rank</th>
@@ -96,7 +96,7 @@ const Rankings = () => {
                             <tbody>
                                 <tr className="border-b-4 border-indigo-300 py-4">
                                     <td className="text-center font-bold">1.</td>
-                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-10" />Axie Infinity</td>
+                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-8" />Axie Infinity</td>
                                     <td className="text-center">Etheruim</td>
                                     <td className="text-center">116k</td>
                                     <td className="text-center">1.6m</td>
@@ -109,7 +109,7 @@ const Rankings = () => {
                                 </tr>
                                 <tr className="border-b-4 border-indigo-300 py-4">
                                     <td className="text-center font-bold">2.</td>
-                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-10" />Axie Infinity</td>
+                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-8" />Axie Infinity</td>
                                     <td className="text-center">Etheruim</td>
                                     <td className="text-center">116k</td>
                                     <td className="text-center">1.6m</td>
@@ -122,7 +122,7 @@ const Rankings = () => {
                                 </tr>
                                 <tr className="border-b-4 border-indigo-300 py-4">
                                     <td className="text-center font-bold">3.</td>
-                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-10" />Axie Infinity</td>
+                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-8" />Axie Infinity</td>
                                     <td className="text-center">Etheruim</td>
                                     <td className="text-center">116k</td>
                                     <td className="text-center">1.6m</td>
@@ -135,7 +135,7 @@ const Rankings = () => {
                                 </tr>
                                 <tr className="border-b-4 border-indigo-300 py-4">
                                     <td className="text-center font-bold">4.</td>
-                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-10" />Axie Infinity</td>
+                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-8" />Axie Infinity</td>
                                     <td className="text-center">Etheruim</td>
                                     <td className="text-center">116k</td>
                                     <td className="text-center">1.6m</td>
@@ -148,7 +148,7 @@ const Rankings = () => {
                                 </tr>
                                 <tr className="border-b-4 border-indigo-300 py-4">
                                     <td className="text-center font-bold">5.</td>
-                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-10" />Axie Infinity</td>
+                                    <td className="flex justify-center items-end"> <img src={logo} alt="Game Logo" className="h-8" />Axie Infinity</td>
                                     <td className="text-center">Etheruim</td>
                                     <td className="text-center">116k</td>
                                     <td className="text-center">1.6m</td>

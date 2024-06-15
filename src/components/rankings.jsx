@@ -53,11 +53,115 @@ const Rankings = () => {
         <div className="flex bg-orange-500 text-white px-1 p-4 md:px-28">
             {/* Main content */}
             <div className="flex-grow p-2 md:mt-20 mt-16 justify-center">
+            <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mb-8">
+                <div className="blue shadow-md rounded-md p-4 flex-grow md:p-6">
+                    <h1 className='font-bold text-center m-3 text-lg'>Hyped Leaderboard </h1>
+                    <div className="overflow-x-auto max-w-[100%] sm:max-w-[445px] md:max-w-full lg:max-w-full">
+                    <table className="w-full md:text-sm text-[8px]">
+                        <thead className="mb-20">
+                        <tr className="border-y-2 border-indigo-100">
+                            <th className="p-2">Rank</th>
+                            <th className='text-left'>Name</th>
+                            <th>Up Votes</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr className="border-b-4 border-indigo-300 py-4">
+                            <td className="text-center font-bold">1.</td>
+                            <td className="flex justify-start  items-end">
+                            <img src={logo} alt="Game Logo" className="h-8 mr-1" />
+                            Axie Infinity
+                            </td>
+                            <td className="text-center">345</td>
+                        </tr>
+                        <tr className="border-b-4 border-indigo-300 py-4">
+                            <td className="text-center font-bold">1.</td>
+                            <td className="flex justify-start items-end">
+                            <img src={logo} alt="Game Logo" className="h-8 mr-1" />
+                            Axie Infinity
+                            </td>
+                            <td className="text-center">742</td>
+                        </tr>
+                        <tr className="border-b-4 border-indigo-300 py-4">
+                            <td className="text-center font-bold">1.</td>
+                            <td className="flex justify-start items-end">
+                            <img src={logo} alt="Game Logo" className="h-8 mr-1" />
+                            Axie Infinity
+                            </td>
+                            <td className="text-center">742</td>
+                        </tr>
+                        <tr className="border-b-4 border-indigo-300 py-4">
+                            <td className="text-center font-bold">1.</td>
+                            <td className="flex justify-start items-end">
+                            <img src={logo} alt="Game Logo" className="h-8 mr-1" />
+                            Axie Infinity
+                            </td>
+                            <td className="text-center">742</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                <div className="blue shadow-md rounded-md p-4 flex-grow md:p-6">
+                <h1 className='font-bold text-center m-3 text-lg'>Hyped Leaderboard </h1>
+                    <div className="overflow-x-auto max-w-[100%] sm:max-w-[445px] md:max-w-full lg:max-w-full">
+                    <table className="w-full md:text-sm text-[8px]">
+                        <thead className="mb-20">
+                        <tr className="border-y-2 border-indigo-100">
+                            <th className="p-2">Rank</th>
+                            <th className='text-left'>Name</th>
+                            <th>Up Votes</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr className="border-b-4 border-indigo-300 py-4">
+                            <td className="text-center font-bold">1.</td>
+                            <td className="flex justify-start items-end">
+                            <img src={logo} alt="Game Logo" className="h-8 mr-1" />
+                            Axie Infinity
+                            </td>
+                            <td className="text-center">742</td>
+                        </tr>
+                        <tr className="border-b-4 border-indigo-300 py-4">
+                            <td className="text-center font-bold">1.</td>
+                            <td className="flex justify-start items-end">
+                            <img src={logo} alt="Game Logo" className="h-8 mr-1" />
+                            Axie Infinity
+                            </td>
+                            <td className="text-center">742</td>
+                        </tr>
+                        <tr className="border-b-4 border-indigo-300 py-4">
+                            <td className="text-center font-bold">1.</td>
+                            <td className="flex justify-start items-end">
+                            <img src={logo} alt="Game Logo" className="h-8 mr-1" />
+                            Axie Infinity
+                            </td>
+                            <td className="text-center">742</td>
+                        </tr>
+                        <tr className="border-b-4 border-indigo-300 py-4">
+                            <td className="text-center font-bold">1.</td>
+                            <td className="flex justify-start items-end">
+                            <img src={logo} alt="Game Logo" className="h-8 mr-1" />
+                            Axie Infinity
+                            </td>
+                            <td className="text-center">742</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+
                 {/* Add your main content here */}
+                <h1 className='font-bold text-black m-3 text-lg'>Top Blockchain Apps </h1>
                 <div className="blue shadow-md rounded-md p-4 flex-grow md:p-6 ">
                     <nav className="mb-4 w-full">
                         <ul className="flex justify-start md:justify-between space-x-4 overflow-x-auto whitespace-nowrap text-sm text-white ">
                             <li className="flex-shrink-0 border-b-4 border-b-orange-600"><a href="#">All Categories</a></li>
+                            <li className="flex-shrink-0"><a href="#">Games</a></li>
+                            <li className="flex-shrink-0"><a href="#">DeFi</a></li>
+                            <li className="flex-shrink-0"><a href="#">Gaming</a></li>
                             <li className="flex-shrink-0"><a href="#">Games</a></li>
                             <li className="flex-shrink-0"><a href="#">DeFi</a></li>
                             <li className="flex-shrink-0"><a href="#">Gaming</a></li>
@@ -164,7 +268,7 @@ const Rankings = () => {
                     </div>
                 </div>
 
-                <div className="rounded-md p-2 md:p-2">
+                <div className="rounded-md p-2 mt-7 bg-orange-200 md:p-2">
                     <h2 className="md:text-xl text-sm text-black font-semibold mb-2 md:mb-4">Featured Games</h2>
                     <div className="relative">
                         <button
@@ -173,14 +277,14 @@ const Rankings = () => {
                         >
                         <AiOutlineLeft />
                         </button>
-                        <div className="flex overflow-x-auto md:overflow-hidden transition-transform duration-500 ease-in-out transform">
+                        <div className="flex  md:overflow-hidden transition-transform duration-500 ease-in-out transform">
                         {displayedImages().map((image, index) => (
                             <div key={index} className="flex-shrink-0 w-full md:w-[175px] lg:w-80 xl:w-90 2xl:w-[410px] m-2">
 
                             <img
                                 src={image.src}
                                 alt={`Carousel Image ${index}`}
-                                className="w-full rounded-xl md:max-h-[240px] lg:max-h-[240px]"
+                                className="w-full rounded-xl max-h-[200px] md:max-h-[220px] lg:max-h-[240px]"
                                 onClick={() => handleImageClick(image)}
                             />
                             <h3 className="text-sm font-semibold mt-2 text-black text-center">{image.title}</h3>
@@ -195,7 +299,11 @@ const Rankings = () => {
                         <AiOutlineRight />
                         </button>
                     </div>
-                    </div>
+                </div>
+
+
+
+
 
 
                 
@@ -213,7 +321,11 @@ const Rankings = () => {
                     </div>
                 )}
             </div>
+
+
         </div>
+
+        
     );
 };
 

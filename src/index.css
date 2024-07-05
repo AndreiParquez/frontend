@@ -19,6 +19,14 @@ body {
 .clipped-bg-yellow{
   clip-path: polygon(3% 0, 100% 6%, 100% 91%, 0% 100%);
 }
+.clipped-bg-blue{
+  clip-path: polygon(0 0, 100% 6%, 97% 93%, 3% 100%);
+
+
+ 
+  background-color: #0555b6;
+  ;
+}
 .clipped-bg-yellow2{
   clip-path: polygon(1% 6%, 100% 3%, 100% 100%, 0 96%);
 

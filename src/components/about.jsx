@@ -12,7 +12,7 @@ const About = () => {
     <div className="flex-grow md:p-4 p-2 md:mt-20 mt-16 space-y-20">
       <div className="flex flex-col md:flex-row gap-10 px-60 text-black">
         <div className="flex-1 rounded bg-yellow clipped-bg-yellow p-10">
-          <h1 className="font-bold text-lg">Discoverability & Tracking</h1>
+          <p className="font-bold text-md">Discoverability & Tracking</p>
           <p className="text-sm mt-2">
             <p className="font-bold text-sm">Expert Analysis & Data Aggregation:</p>
             We curate and rank dApps based on a comprehensive evaluation, ensuring you discover the best options.
@@ -30,7 +30,7 @@ const About = () => {
           </p>
         </div>
         <div className="flex-1 rounded clipped-bg-yellow2 bg-yellow p-10">
-          <h1 className="font-bold text-lg">Credible Data Aggregation & QA dApp Reviewer</h1>
+          <p className="font-bold text-md">Credible Data Aggregation & QA dApp Reviewer</p>
           <p className="text-sm mt-2">
             Rather than focusing solely on surface-level metrics like social scores, a comprehensive approach involves collecting all important and relevant data, both on and off-chain
           </p>
@@ -67,6 +67,98 @@ Developers: Earn badges for high-scoring dApps, KYC verification, and platform e
           <p className=' text-sm'>$DP (DApps Points): This utility token rewards you for valuable contributions like reviews and upvotes. Earn $DP and fuel your engagement within the KYD community.
           $KYD (KnowYourDapp Token): The platform's core, Proof-of-Stake (PoS) token with dual functionality for Governance and Utility of the platform.</p>
           
+        </div>
+      </div>
+
+
+      <div className=" md:flex-row gap-10 px-60 text-white ">
+        <div className="flex rounded p-10 text-center clipped-bg-blue space-x-4">
+         <div className='bg-white p-3 w-56 space-y-3 mt-56 h-full'>
+          <p className='bg-yellow text-black text-sm p-2 font-bold'>Q1 2024 - Phase 1:</p>
+          <div className="text-black text-sm text-left mx-4">
+            <li>Initiation of the Project</li>
+            <li>Project Planning</li>
+            <li>Risk Management Planning</li>
+          </div>
+
+          <p className='bg-yellow text-black text-sm p-2 font-bold '>Q2 2024 - Phase 2:</p>
+          <div className="text-black text-sm text-left mx-4">
+            <li>Deployment of Initial Website Features (manual rating system, all main pages)</li>
+            <li>Launch of the KnowYourDapp platform</li>
+            <li>Launch of the communities</li>
+            <li>Foundation partnership/grant</li>
+            <li>Listing of dApps</li>
+          </div>
+         </div>
+
+
+        <div className='bg-white p-3 w-56 space-y-3 mt-40 h-full'>
+          <p className='bg-yellow text-black text-sm p-2 font-bold'>Q3 2024 - Phase 1:</p>
+          <div className="text-black text-sm text-left mx-4">
+            <li>Deployment Mid-feature website</li>
+            <li>$KYD token launch and initial blockchain integration</li>
+            <li>Start of First wave marketing campaign*</li>
+            <li>Airdrop and Bounty Campaign Launch  </li>
+            <li>blockchain/hashgraph ecosystem partnerships</li>
+          </div>
+
+          <p className='bg-yellow text-black text-sm p-2 font-bold '>Q3 2024 - Phase 2:</p>
+          <div className="text-black text-sm text-left mx-4">
+            <li>$KYD Presale*</li>
+            <li>Launch of the KYD services</li>
+            <li>(DAO) KYD boards deployment*</li>
+            <li>Foundation partnership/grant</li>
+            <li>Post-token launch event</li>
+          </div>
+        </div>
+
+
+        <div className='bg-white p-3 w-56 space-y-3 mt-28 h-full'>
+          <p className='bg-yellow text-black text-sm p-2 font-bold'>Q4 2024 - Phase 1:</p>
+          <div className="text-black text-sm text-left mx-4">
+            <li>Deployment of Intermediate-feature website (community rating sytem, staking systems, rewards system)</li>
+            <li>Launch of dex liquidity pool</li>
+            <li>Launch of the badges system and rewards system</li>
+            <li>Start of second wave marketing campaign*</li>
+            <li>Public Listing of $KYD</li>
+          </div>
+
+          <p className='bg-yellow text-black text-sm p-2 font-bold '>Q4 2024 - Phase 2:</p>
+          <div className="text-black text-sm text-left mx-4">
+            <li>Full Feature Website</li>
+            <li>$KYD Initial Token Burning</li>
+            <li>Launch game incubators</li>
+            <li>launchpads for further growth and expansion</li>
+            <li>onboarding mor partners</li>
+          </div>
+        </div>
+
+
+        <div className='bg-white p-3 w-56 space-y-3 mt-10 h-full'>
+          <p className='bg-yellow text-black text-sm p-2 font-bold'>Q1 2025 - Phase 1:</p>
+          <div className="text-black text-sm text-left mx-4">
+            <li>dApp marketplace launch
+
+
+
+
+</li>
+            <li>Launchpads for further growth and expansion</li>
+            <li>integration into decentralized social media*</li>
+            <li>KYD smart contract audits services</li>
+            <li>KYT Certified badges</li>
+            <li>integration to the metaverse*</li>
+          </div>
+
+        
+        </div>
+
+      
+
+
+          
+        
+       
         </div>
       </div>
       

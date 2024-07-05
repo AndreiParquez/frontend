@@ -303,7 +303,83 @@ const Rankings = () => {
 
 
 
+                <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mb-8 mt-7">
+                    
+                <div className="blue shadow-md rounded-md p-4 flex-grow md:p-6">
+                   
+                    <div className="overflow-x-auto max-w-[100%] sm:max-w-[445px] md:max-w-full lg:max-w-full">
+                    <table className="w-full md:text-sm text-[8px]">
+                        <thead className="mb-20">
+                        <tr className="border-y-2 border-indigo-100">
+                            <th className="p-2">Rank</th>
+                            <th className='text-left'>Name</th>
+                            <th>Up Votes</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr className="border-b-4 border-indigo-300 py-4">
+                            <td className="text-center font-bold">1.</td>
+                            <td className="flex justify-start  items-end">
+                            <img src={logo} alt="Game Logo" className="h-8 mr-1" />
+                            Axie Infinity
+                            </td>
+                            <td className="text-center">345</td>
+                        </tr>
+                        <tr className="border-b-4 border-indigo-300 py-4">
+                            <td className="text-center font-bold">1.</td>
+                            <td className="flex justify-start items-end">
+                            <img src={logo} alt="Game Logo" className="h-8 mr-1" />
+                            Axie Infinity
+                            </td>
+                            <td className="text-center">742</td>
+                        </tr>
+                        <tr className="border-b-4 border-indigo-300 py-4">
+                            <td className="text-center font-bold">1.</td>
+                            <td className="flex justify-start items-end">
+                            <img src={logo} alt="Game Logo" className="h-8 mr-1" />
+                            Axie Infinity
+                            </td>
+                            <td className="text-center">742</td>
+                        </tr>
+                        <tr className="border-b-4 border-indigo-300 py-4">
+                            <td className="text-center font-bold">1.</td>
+                            <td className="flex justify-start items-end">
+                            <img src={logo} alt="Game Logo" className="h-8 mr-1" />
+                            Axie Infinity
+                            </td>
+                            <td className="text-center">742</td>
+                        </tr>
 
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                <div className="shadow-md rounded-md flex-grow w-5/12  space-y-2">
+                <div className="blue w-full flex space-x-2 p-4 rounded">
+                    <img src={image2} alt="Game Logo" className="h-48 mr-1 w-1/2 rounded" />
+                    <div className="flex-grow">
+                    <p className='text-sm text-left mb-4 '>
+                        Lorem ipsum dolor sit ametea
+                    </p>
+                    <p className='text-sm text-left '>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim commodo consequat veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    </p>
+                    </div>
+                </div>
+                <div className="blue w-full flex space-x-2 p-4 rounded">
+                    <img src={image2} alt="Game Logo" className="h-48 mr-1 w-1/2 rounded" />
+                    <div className="flex-grow">
+                    <p className='text-sm text-left mb-4 '>
+                        Lorem ipsum dolor sit ametea
+                    </p>
+                    <p className='text-sm text-left text-white'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim commodo consequat veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    </p>
+                    </div>
+                </div>
+                </div>
+
+            </div>
 
 
                 

@@ -16,6 +16,13 @@ body {
   clip-path: polygon(0 0, 100% 5%, 100% 96%, 0% 100%);
   background-color: #002f69; /* Example background color */
 }
+.clipped-bg-yellow{
+  clip-path: polygon(3% 0, 100% 6%, 100% 91%, 0% 100%);
+}
+.clipped-bg-yellow2{
+  clip-path: polygon(1% 6%, 100% 3%, 100% 100%, 0 96%);
+
+}
 h2 {
   @apply text-xl md:text-4xl;
 }
@@ -32,4 +39,7 @@ p {
 .sidebar {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+.bg-yellow{
+  background-color: #FF981C;
 }

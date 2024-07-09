@@ -1,4 +1,4 @@
-// src/About.js
+
 import React from 'react';
 import hero1 from '../assets/reviewteam 1.png';
 import hero2 from '../assets/tracker 1.png';
@@ -73,6 +73,10 @@ Developers: Earn badges for high-scoring dApps, KYC verification, and platform e
 
       <div className=" md:flex-row gap-10 px-60 text-white ">
         <div className="flex rounded p-10 text-center clipped-bg-blue space-x-4">
+          <div className="absolute">
+            <p className='font-bold'>2024 to 2025</p>
+            <p className='font-bold text-2xl'>KYD Road Map</p>
+          </div>
          <div className='bg-white p-3 w-56 space-y-3 mt-56 h-full'>
           <p className='bg-yellow text-black text-sm p-2 font-bold'>Q1 2024 - Phase 1:</p>
           <div className="text-black text-sm text-left mx-4">

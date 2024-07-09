@@ -35,7 +35,7 @@ const Navbar = () => {
                         <span className='absolute bottom-0 left-0 w-full h-1 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out'></span>
                     </li>
                     <li className='relative group'>
-                        <Link to="/rankings" onClick={closeNav}>Contribute</Link>
+                        <Link to="/dapp" onClick={closeNav}>Contribute</Link>
                         <span className='absolute bottom-0 left-0 w-full h-1 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out'></span>
                     </li>
                     <li className='relative group'>
@@ -52,7 +52,7 @@ const Navbar = () => {
                     <li><Link to="/" onClick={closeNav}>Home</Link></li>
                     <li><Link to="/about" onClick={closeNav}>About</Link></li>
                     <li><Link to="/rankings" onClick={closeNav}>Rankings</Link></li>
-                    <li><Link to="/rankings" onClick={closeNav}>Contribute</Link></li>
+                    <li><Link to="/dapp" onClick={closeNav}>Contribute</Link></li>
                     <li><Link to="/rankings" onClick={closeNav}>Whitepaper</Link></li>
                 </ul>
             </div>

@@ -18,6 +18,8 @@ const Home = () => {
         </div>
       </div>
 
+      
+
       <div className="md:flex flex-col md:flex-row gap-4 ">
         <div className="flex-1 p-4 rounded flex items-center justify-center">
           <img src={hero2} alt="Game Logo" className="w-full h-auto max-w-md" />

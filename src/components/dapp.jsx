@@ -1,4 +1,4 @@
-// src/About.js
+
 import React from 'react';
 import cover from '../assets/dappimg.png';
 import logo from '../assets/dapplogo.png';

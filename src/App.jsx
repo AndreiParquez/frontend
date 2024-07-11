@@ -6,6 +6,7 @@ import About from './components/about';
 import Dapp from './components/dapp';
 import Rankings from './components/rankings';
 import Footer from './components/footer';
+import Index from './components/index';
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/index" element={<Index />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/rankings" element={<Rankings />} />
                 <Route path="/dapp" element={<Dapp />} />
@@ -21,5 +23,4 @@ const App = () => {
         </Router>
     );
 };
-
 export default App;

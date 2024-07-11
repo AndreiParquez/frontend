@@ -14,12 +14,12 @@ const Navbar = () => {
     };
 
     return (
-        <div className='fixed top-0 left-0 w-full blue text-white  z-50'>
+        <div className='fixed top-0 left-0 w-full bg-transparent text-white  z-50'>
             <div className='flex justify-between items-center md:px-24 h-16 mx-auto px-4'>
                 <div className='flex'>
-                <img src={logo} alt="Game Logo" className="w-8 h-8" />
+                <img src={logo} alt="Game Logo" className=" h-8" />
                 <a className=' text-xl flex items-center'>
-                    knowyour<span className='text-orange-500'>d</span><span className='text-blue-800'>app</span>
+                    knowyour<span className='text-orange-500'>d</span><span className='textwhite'>app</span>
                 </a></div>
                 <ul className='hidden md:flex gap-12 cursor-pointer text-sm'>
                     <li className='relative group'>

@@ -15,13 +15,14 @@ const Navbar = () => {
 
     return (
         <div className='fixed top-0 left-0 w-full bg-transparent text-white  z-50'>
-            <div className='flex justify-between items-center md:px-24 h-16 mx-auto px-4'>
+            <div className='flex justify-between items-center md:px-10 h-16 mx-auto px-4'>
                 <div className='flex'>
-                <img src={logo} alt="Game Logo" className=" h-8" />
-                <a className=' text-xl flex items-center'>
-                    knowyour<span className='text-orange-500'>d</span><span className='textwhite'>app</span>
-                </a></div>
-                <ul className='hidden md:flex gap-12 cursor-pointer text-sm'>
+                    <img src={logo} alt="Game Logo" className=" h-8" />
+                    <a className=' text-xl flex items-center'>
+                        knowyour<span className='text-orange-500'>d</span><span className='textwhite'>app</span>
+                    </a>
+                </div>
+                <ul className='hidden md:flex gap-10 cursor-pointer text-sm'>
                     <li className='relative group'>
                         <Link to="/" onClick={closeNav}>Home</Link>
                         <span className='absolute bottom-0 left-0 w-full h-1 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out'></span>

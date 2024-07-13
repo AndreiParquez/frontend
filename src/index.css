@@ -113,3 +113,6 @@ p {
 .float-animation-4 {
   animation: float 7s ease-in-out infinite;
 }
+.shadows{
+  box-shadow: rgba(0, 0, 0, 0.682) 0px 5px 15px;
+}

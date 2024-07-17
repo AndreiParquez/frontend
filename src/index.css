@@ -116,3 +116,6 @@ p {
 .shadows{
   box-shadow: rgba(0, 0, 0, 0.682) 0px 5px 15px;
 }
+.darkblue{
+  background-color: #0D1F42;
+}

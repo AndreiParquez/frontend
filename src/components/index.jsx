@@ -82,23 +82,23 @@ function Index() {
             <div className="w-full md:w-1/2">
               <h2 className="text-lg font-bold mb-4 text-center">Sign up</h2>
               <form>
-                <div className="mb-1">
+                <div className="mb-3">
                   <label className="block text-black mb-2 text-xs">Username</label>
                   <input type="text" className="w-full p-2 text-sm border border-gray-300 rounded-lg shadow-lg" />
                 </div>
-                <div className="mb-1">
+                <div className="mb-3">
                   <label className="block text-black mb-2 text-xs">Email</label>
                   <input type="email" className="w-full p-2 border text-sm border-gray-300 rounded-lg shadow-lg" />
                 </div>
-                <div className="mb-1">
+                <div className="mb-3">
                   <label className="block text-black mb-2 text-xs">Password</label>
                   <input type="password" className="w-full p-2 border text-sm border-gray-300 rounded-lg shadow-lg" />
                 </div>
-                <div className="mb-1">
+                <div className="mb-3">
                   <label className="block text-black mb-2 text-xs">Re-enter Password</label>
                   <input type="password" className="w-full p-2 border text-sm border-gray-300 rounded-lg shadow-lg" />
                 </div>
-                <div className="mb-1">
+                <div className="mb-3">
                   <label className="block text-black mb-2 text-xs">Wallet Address</label>
                   <input type="text" className="w-full p-2 border text-sm border-gray-300 rounded-lg shadow-lg" />
                 </div>

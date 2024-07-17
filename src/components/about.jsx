@@ -34,11 +34,11 @@ const About = () => {
           <p className="text-sm mt-2">
             Rather than focusing solely on surface-level metrics like social scores, a comprehensive approach involves collecting all important and relevant data, both on and off-chain
           </p>
-          <div className="flex mt-3">
-          <img src={hero1} className="w-28 max-w-md mx-auto" />
-          <p className="text-sm mt-2">
-            On top of the data analytics, we also have an onboard QA reviewer team that reviews dApps manually. The platform will also provide an opportunity for the users in the community to be part of the reviewer team.
-          </p>
+          <div className="flex mt-3 ">
+            <img src={hero1} className="w-28 max-w-md h-28 mx-auto" />
+            <p className="text-sm mt-2">
+              On top of the data analytics, we also have an onboard QA reviewer team that reviews dApps manually. The platform will also provide an opportunity for the users in the community to be part of the reviewer team.
+            </p>
           
           </div>
         </div>
@@ -77,7 +77,7 @@ Developers: Earn badges for high-scoring dApps, KYC verification, and platform e
             <p className='font-bold'>2024 to 2025</p>
             <p className='font-bold text-2xl'>KYD Road Map</p>
           </div>
-         <div className='bg-white p-3 w-56 space-y-3 mt-56 h-full'>
+         <div className='bg-white p-3 w-56 space-y-3 mt-56 min-w-48 h-full'>
           <p className='bg-yellow text-black text-sm p-2 font-bold'>Q1 2024 - Phase 1:</p>
           <div className="text-black text-sm text-left mx-4">
             <li>Initiation of the Project</li>
@@ -96,7 +96,7 @@ Developers: Earn badges for high-scoring dApps, KYC verification, and platform e
          </div>
 
 
-        <div className='bg-white p-3 w-56 space-y-3 mt-40 h-full'>
+        <div className='bg-white p-3 w-56 space-y-3 mt-40 min-w-48 h-full'>
           <p className='bg-yellow text-black text-sm p-2 font-bold'>Q3 2024 - Phase 1:</p>
           <div className="text-black text-sm text-left mx-4">
             <li>Deployment Mid-feature website</li>
@@ -117,7 +117,7 @@ Developers: Earn badges for high-scoring dApps, KYC verification, and platform e
         </div>
 
 
-        <div className='bg-white p-3 w-56 space-y-3 mt-28 h-full'>
+        <div className='bg-white p-3 w-56 min-w-48 space-y-3 mt-28 h-full'>
           <p className='bg-yellow text-black text-sm p-2 font-bold'>Q4 2024 - Phase 1:</p>
           <div className="text-black text-sm text-left mx-4">
             <li>Deployment of Intermediate-feature website (community rating sytem, staking systems, rewards system)</li>
@@ -138,7 +138,7 @@ Developers: Earn badges for high-scoring dApps, KYC verification, and platform e
         </div>
 
 
-        <div className='bg-white p-3 w-56 space-y-3 mt-10 h-full'>
+        <div className='bg-white p-3 w-56 space-y-3 mt-10 min-w-48 h-full'>
           <p className='bg-yellow text-black text-sm p-2 font-bold'>Q1 2025 - Phase 1:</p>
           <div className="text-black text-sm text-left mx-4">
             <li>dApp marketplace launch

@@ -57,7 +57,7 @@ const Navbar = () => {
                 <div className="bg-cover bg-center  h-28" style={{ backgroundImage: `url(${cover})` }}></div>
                 <div className="p-3">
                     <div className="flex items-center mt-[-60px] space-x-2">
-                    <img src={avatar} alt="profile" className="w-20 h-20 rounded-full border-4 border-zinc-900 mt-5" />
+                    <img src={avatar} alt="profile" className="w-24 h-24 rounded-full border-4 border-zinc-900 mt-5" />
                     <h1 className="text-center text-xl  font-bold mt-9">Andrei R. Parquez</h1>
                     </div>
                     <div className="flex justify-center items-center m-4">

@@ -52,15 +52,15 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <div className={`fixed top-0 left-0 w-full h-full darkblue flex flex-col justify-center items-center transform ${nav ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-20`}>
-            <div className="bg-zinc-900 m-7 rounded-lg overflow-hidden">
-                <div className="bg-cover bg-center w-full h-20" style={{ backgroundImage: `url(${cover})` }}></div>
+            <div className={`fixed top-0 left-0 w-full h-full darkblue flex flex-col justify-center items-start transform ${nav ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-20`}>
+            <div className="bg-zinc-900  mt-4   w-full overflow-hidden">
+                <div className="bg-cover bg-center  h-28" style={{ backgroundImage: `url(${cover})` }}></div>
                 <div className="p-3">
-                    <div className="flex items-center mt-[-50px] space-x-2">
-                    <img src={avatar} alt="profile" className="w-12 h-12 rounded-full border-4 border-zinc-900 mt-5" />
-                    <h1 className="text-center text-base font-bold mt-3">John Doe</h1>
+                    <div className="flex items-center mt-[-60px] space-x-2">
+                    <img src={avatar} alt="profile" className="w-20 h-20 rounded-full border-4 border-zinc-900 mt-5" />
+                    <h1 className="text-center text-xl  font-bold mt-9">Andrei R. Parquez</h1>
                     </div>
-                    <div className="pl-5 m-4">
+                    <div className="flex justify-center items-center m-4">
                     <div className="flex mb-5 ml-2 space-x-6">
                         <div className='text-center'>
                         <p className='text-sm font-bold'>120</p>
@@ -70,8 +70,6 @@ const Navbar = () => {
                         <p className='text-sm font-bold'>120</p>
                         <p className='text-xs'>Upvotes</p>
                         </div>
-                    </div>
-                    <div className="flex space-x-4">
                         <div className='text-center'>
                         <p className='text-sm font-bold'>120</p>
                         <p className='text-xs'>Curations</p>
@@ -81,14 +79,15 @@ const Navbar = () => {
                         <p className='text-xs'>Reputation</p>
                         </div>
                     </div>
+                   
                     </div>
-                    <button className="w-full h-8 bg-blue-500 text-white rounded-lg mt-5 flex justify-center items-center">
-                    <PencilIcon className="w-4 h-4 mr-2" />
+                    <button className="w-1/2 h-11 mx-auto font-bold bg-blue-500 text-white rounded-lg mt-5 flex justify-center items-center">
+                    <PencilIcon className="w-5 h-5 mr-2 font-bold" />
                     Edit Profile
                     </button>
                 </div>
             </div>
-        <nav className="mt-1">
+        <nav className="mt-1 w-full">
           <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
             <HomeIcon className="w-7 h-7 mr-3" />
             Dashboard

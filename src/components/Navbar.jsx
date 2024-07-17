@@ -29,28 +29,7 @@ const Navbar = () => {
                         knowyour<span className='text-orange-500'>d</span><span className='textwhite'>app</span>
                     </a>
                 </div>
-                <ul className='hidden md:flex gap-10 cursor-pointer text-sm'>
-                    <li className='relative group'>
-                        <Link to="/" onClick={closeNav}>Home</Link>
-                        <span className='absolute bottom-0 left-0 w-full h-1 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out'></span>
-                    </li>
-                    <li className='relative group'>
-                        <Link to="/about" onClick={closeNav}>About</Link>
-                        <span className='absolute bottom-0 left-0 w-full h-1 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out'></span>
-                    </li>
-                    <li className='relative group'>
-                        <Link to="/rankings" onClick={closeNav}>Rankings</Link>
-                        <span className='absolute bottom-0 left-0 w-full h-1 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out'></span>
-                    </li>
-                    <li className='relative group'>
-                        <Link to="/dapp" onClick={closeNav}>Contribute</Link>
-                        <span className='absolute bottom-0 left-0 w-full h-1 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out'></span>
-                    </li>
-                    <li className='relative group'>
-                        <Link to="/rankings" onClick={closeNav}>Whitepaper</Link>
-                        <span className='absolute bottom-0 left-0 w-full h-1 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out'></span>
-                    </li>
-                </ul>
+
             </div>
             <div className={`fixed top-0 left-0 w-full h-full darkblue flex flex-col justify-center items-start transform ${nav ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-20`}>
             <div className="bg-zinc-900     w-full overflow-hidden">

@@ -17,17 +17,20 @@ function Index() {
   };
 
   return (
-    <div className='relative h-full overflow-hidden blue md:p-4 p-2'>
-      <div className="bg-orange-400 rounded-full absolute top-[-300px] right-[-200px] z-10 shadow-lg md:h-[1000px] md:w-[1000px] lg:h-[1200px] shadows h-[1200px] lg:w-[1200px]"></div>
-      <div className="flex flex-col md:flex-row justify-center">
-        <div className="h-screen z-20 w-full md:w-6/12 md:h-[700px] flex space-y-6 flex-col justify-center items-center px-10 md:px-2">
+    <div className='relative h-screen flex flex-col justify-center overflow-hidden blue md:p-4 p-2'>
+     <div className="bg-orange-400 rounded-full absolute top-[-50px] right-[-100px] z-10 shadows h-[300px] w-[300px] sm:h-[500px] sm:w-[500px] md:h-[700px] md:w-[700px] md:block hidden lg:h-[1000px] lg:w-[1000px]"></div>
+      <div className="flex flex-col md:flex-row justify-between">
+
+        <div className="h-screen z-20 w-full md:w-4/12  md:h-[700px] flex space-y-6 flex-col justify-center items-center  md:px-2">
+
+        
           <p className='text-white text-[30px] md:text-[40px] lg:text-[50px] font-semibold text-center'>
             Your <span className='text-orange-500 font-extrabold drop-shadow'>Social Platform </span> for dApps
           </p>
-
-          <p className='text-white text-center text-sm md:text-base'>Discover, discuss, and contribute to the dApp revolution.</p>
-          <p className='text-white text-center text-sm md:text-base'>Curate your favorite dApps, engage with the community, review and earn $DP.</p>
-
+          <div className="px-auto">
+          <p className='text-white font-bold text-center text-sm md:text-sm'>Discover, discuss, and contribute to the dApp revolution.</p>
+          <p className='text-white font-bold mt-2 text-center text-sm md:text-sm'>Curate your favorite dApps, engage with the community, review and earn $DP.</p>
+          </div>
           <div className='flex space-x-4'>
             <button className='bg-orange-500 text-black rounded-lg p-3 font-bold text-sm md:text-sm shadow' onClick={toggleLoginModal}>Go to Home</button>
             <button className='bg-white text-black rounded-lg p-3 font-bold text-sm md:text-sm shadow' onClick={toggleAccountModal}>Explore dApps!</button>

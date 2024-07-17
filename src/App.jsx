@@ -23,7 +23,7 @@ const App = () => {
                 <Route path="/dapp" element={<Dapp />} />
                 <Route path="/feed" element={<Feedpage />} />
             </Routes>
-            <Footer />
+            
         </Router>
     );
 };

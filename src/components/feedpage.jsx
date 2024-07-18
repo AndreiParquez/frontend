@@ -19,7 +19,7 @@ const FeedPage = () => {
                         <FaChevronLeft className="h-4 w-4" /> {/* Using react-icons */}
                     </button>
                     <div className="bg-white text-blue-500 font-bold text-lg px-4 py-2 mx-2 rounded-lg">
-                        5
+                        
                     </div>
                     <button className="w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center">
                         <FaChevronRight className="h-4 w-4" /> {/* Using react-icons */}

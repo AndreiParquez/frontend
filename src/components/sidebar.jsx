@@ -8,9 +8,9 @@ const Sidebar = () => {
   return (
     <aside className="fixed h-full w-64 darkblue text-white hidden md:block">
       <div className="bg-zinc-900 m-7 rounded-lg overflow-hidden">
-        <div className="bg-cover bg-center w-full h-20" style={{ backgroundImage: `url(${cover})` }}></div>
+       {/* <div className="bg-cover bg-center w-full h-20" style={{ backgroundImage: `url(${cover})` }}></div>*/}
         <div className="p-3">
-          <div className="flex items-center mt-[-50px] space-x-2">
+           {/*<div className="flex items-center mt-[-50px] space-x-2">
             <img src={avatar} alt="profile" className="w-12 h-12 rounded-full border-4 border-zinc-900 mt-5" />
             <h1 className="text-center text-base font-bold mt-3">John Doe</h1>
           </div>
@@ -35,11 +35,11 @@ const Sidebar = () => {
                 <p className='text-xs'>Reputation</p>
               </div>
             </div>
-          </div>
-          <button className="w-full h-8 bg-blue-500 text-white rounded-lg mt-5 flex justify-center items-center">
+          </div>*/}
+          {/*<button className="w-full h-8 bg-blue-500 text-white rounded-lg mt-5 flex justify-center items-center">
             <PencilIcon className="w-4 h-4 mr-2" />
             Edit Profile
-          </button>
+          </button>*/}
         </div>
       </div>
       <nav className="mt-1">

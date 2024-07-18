@@ -1,6 +1,7 @@
 import React from 'react';
 import avatar from '../assets/cj.png';
 import cover from '../assets/cover.png';
+import { NavLink } from 'react-router-dom';
 import { HomeIcon, ChatBubbleBottomCenterTextIcon, FireIcon, Cog6ToothIcon, InformationCircleIcon, PencilIcon } from '@heroicons/react/24/solid';
 
 const Sidebar = () => {
@@ -42,29 +43,54 @@ const Sidebar = () => {
         </div>
       </div>
       <nav className="mt-1">
-        <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
+        <NavLink 
+          to="/home" 
+          className={({ isActive }) => 
+            isActive ? "flex items-center py-2.5 px-7 transition duration-200 bg-blue-800 text-white" : "flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white"
+          }
+        >
           <HomeIcon className="w-7 h-7 mr-3" />
-          Dashboard
-        </a>
-        <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
+          Home
+        </NavLink>
+        <NavLink 
+          to="/explore" 
+          className={({ isActive }) => 
+            isActive ? "flex items-center py-2.5 px-7 transition duration-200 bg-blue-800 text-white" : "flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white"
+          }
+        >
           <FireIcon className="w-7 h-7 mr-3" />
           Explore
-        </a>
-        <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
+        </NavLink>
+        <NavLink 
+          to="/feed" 
+          className={({ isActive }) => 
+            isActive ? "flex items-center py-2.5 px-7 transition duration-200 bg-blue-800 text-white" : "flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white"
+          }
+        >
           <ChatBubbleBottomCenterTextIcon className="w-7 h-7 mr-3" />
           Feed
-        </a>
+        </NavLink>
         <a href="#" className="flex items-center text-center justify-center text-black font-bold py-2.5 px-7 bg-orange-400 m-5 mx-9 rounded-lg transition duration-200 hover:bg-blue-800 hover:text-white">
           Curate Now
         </a>
-        <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
+        <NavLink 
+          to="/settings" 
+          className={({ isActive }) => 
+            isActive ? "flex items-center py-2.5 px-7 transition duration-200 bg-blue-800 text-white" : "flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white"
+          }
+        >
           <Cog6ToothIcon className="w-7 h-7 mr-3" />
           Settings
-        </a>
-        <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
+        </NavLink>
+        <NavLink 
+          to="/about" 
+          className={({ isActive }) => 
+            isActive ? "flex items-center py-2.5 px-7 transition duration-200 bg-blue-800 text-white" : "flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white"
+          }
+        >
           <InformationCircleIcon className="w-7 h-7 mr-3" />
           About
-        </a>
+        </NavLink>
       </nav>
     </aside>
   );

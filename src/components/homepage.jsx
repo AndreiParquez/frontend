@@ -8,6 +8,7 @@ import hero1 from '../assets/magnifinal.svg';
 import hero2 from '../assets/telescope.svg';
 import hero3 from '../assets/curator-kyd.svg';
 import hero4 from '../assets/kyd-final-miners.svg';
+import hero from '../assets/Group 51.png';
           
 
 const Homepage = () => {
@@ -15,9 +16,17 @@ const Homepage = () => {
     <>
       <div className="flex min-h-screen md:mt-16 lg:mt-10 mt-16  bg-orange-400  text-sm">
         <Sidebar />
-        <div className="md:ml-64 flex-1 p-4 md:p-3 lg:p-10 bg-orange-400">
+        <div className="md:ml-64 flex-1 p-4 md:p-3 lg:p-10 bg-orange-400">  
+            
+            <div className="blue flex shadows justify-between text-white items-end rounded-lg ">
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img src={hero} alt="Game Logo" className="md:h-32 h-28 lg:h-52   rounded-lg m-2" />
+
+              <img src={hero} alt="Game Logo" className="md:h-32 h-28 lg:h-52   rounded-lg m-2" />
+              
+            </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 mt-5 gap-4">
             
           <div className="darkblue flex shadows  text-white rounded-lg ">
               <img src={hero1} alt="Game Logo" className="md:w-32 w-28 lg:w-44  rounded-lg m-2" />

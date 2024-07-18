@@ -1,4 +1,6 @@
-
+import Sidebar from './sidebar';
+import Footer from './footer';
+import Home from './home';
 import React from 'react';
 import hero1 from '../assets/reviewteam 1.png';
 import hero2 from '../assets/tracker 1.png';
@@ -9,8 +11,13 @@ import icon3 from '../assets/badge.png';
 
 const About = () => {
   return (
-    <div className="flex-grow md:p-4 p-2 md:mt-20 mt-16 space-y-20">
-      <div className="flex flex-col md:flex-row gap-10 px-60 text-black">
+    <>
+    <div className="min-h-screen  md:mt-16 lg:mt-10 mt-16  blue  text-sm">
+    <Sidebar />
+    <div className="flex-grow md:ml-64 md:p-4 p-2  space-y-20">
+      <Home />
+      
+      <div className="flex flex-col md:flex-row md:flex-wrap lg:flex-row gap-10 px-1 md:px-10 lg:px-20 text-black">
         <div className="flex-1 rounded bg-yellow clipped-bg-yellow p-10">
           <p className="font-bold text-md">Discoverability & Tracking</p>
           <p className="text-sm mt-2">
@@ -22,7 +29,7 @@ const About = () => {
               <p className="font-bold text-sm">Discoverability & Reliability: </p>
               A higher ranking indicates a dApp's potential and user trust, making it easier to find trustworthy projects.
             </p>
-            <img src={hero2} className="w-28 max-w-md mx-auto" />
+            <img src={hero2} className="w-28 h-2863 max-w-md mx-auto" />
           </div>
           <p className="text-sm mt-2">
             <p className="font-bold text-sm">Trending & Unique Gems:</p>
@@ -46,33 +53,31 @@ const About = () => {
 
 
 
-      <div className="flex flex-col md:flex-row gap-10 px-60 text-white">
-        <div className="flex-1 rounded p-10 text-center space-y-6 ">
-        <img src={icon1} className="w-40 max-w-md mx-auto" />
-          <p className='font-bold text-md'>DAO COUNCIL</p>
-          <p className=' text-sm'>KYD provides a decentralized approach through the KYD Council, a Decentralized Autonomous Organization (DAO) council established to foster user participation and shape the platform's future.</p>
-          
-        </div>
-        <div className="flex-1 rounded p-10 text-center space-y-6 ">
-        <img src={icon3} className="w-32 max-w-md mx-auto" />
-          <p className='font-bold text-md'>BADGE SYSTEM</p>
-          <p className=' text-sm'>KYD rewards valuable contributions and fosters trust with a tiered badge system.
-Users: Earn badges for participation, fostering a stronger community.
-Developers: Earn badges for high-scoring dApps, KYC verification, and platform engagement. These badges signal trust, quality, and dedication to users.</p>
-          
-        </div>
-        <div className="flex-1 rounded p-10 text-center space-y-6 ">
-        <img src={icon2} className="w-32 max-w-md mx-auto" />
-          <p className='font-bold text-md'>TWO TOKEN, POWERFUL ECOSYSTEM</p>
-          <p className=' text-sm'>$DP (DApps Points): This utility token rewards you for valuable contributions like reviews and upvotes. Earn $DP and fuel your engagement within the KYD community.
-          $KYD (KnowYourDapp Token): The platform's core, Proof-of-Stake (PoS) token with dual functionality for Governance and Utility of the platform.</p>
-          
-        </div>
-      </div>
+      <div className="flex flex-col md:flex-row md:flex-wrap gap-10 px-16 text-white">
+  <div className="flex-1 rounded p-10 text-center space-y-2 md:space-x-6 md:w-1/2">
+    <img src={icon1} className="w-40 max-w-md mx-auto" />
+    <p className='font-bold text-md'>DAO COUNCIL</p>
+    <p className='text-sm'>KYD provides a decentralized approach through the KYD Council, a Decentralized Autonomous Organization (DAO) council established to foster user participation and shape the platform's future.</p>
+  </div>
+  <div className="flex-1 rounded p-5 text-center space-y-6 md:w-1/2">
+    <img src={icon3} className="w-32 max-w-md mx-auto" />
+    <p className='font-bold text-md'>BADGE SYSTEM</p>
+    <p className='text-sm'>KYD rewards valuable contributions and fosters trust with a tiered badge system.
+      Users: Earn badges for participation, fostering a stronger community.
+      Developers: Earn badges for high-scoring dApps, KYC verification, and platform engagement. These badges signal trust, quality, and dedication to users.</p>
+  </div>
+  <div className="flex-1 rounded p-5 text-center space-y-6 md:w-full">
+    <img src={icon2} className="w-32 max-w-md mx-auto" />
+    <p className='font-bold text-md'>TWO TOKEN, POWERFUL ECOSYSTEM</p>
+    <p className='text-sm'>$DP (DApps Points): This utility token rewards you for valuable contributions like reviews and upvotes. Earn $DP and fuel your engagement within the KYD community.
+    $KYD (KnowYourDapp Token): The platform's core, Proof-of-Stake (PoS) token with dual functionality for Governance and Utility of the platform.</p>
+  </div>
+</div>
 
 
-      <div className=" md:flex-row gap-10 px-60 text-white ">
-        <div className="flex rounded p-10 text-center clipped-bg-blue space-x-4">
+
+      <div className=" md:flex-row gap-10 px-2 md:px-5 lg:px-10 text-white  ">
+        <div className="flex rounded p-10 text-center clipped-bg-blue space-x-4 overflow-auto">
           <div className="absolute">
             <p className='font-bold'>2024 to 2025</p>
             <p className='font-bold text-2xl'>KYD Road Map</p>
@@ -167,6 +172,8 @@ Developers: Earn badges for high-scoring dApps, KYC verification, and platform e
       </div>
       
     </div>
+    </div>
+    </>
   );
 };
 

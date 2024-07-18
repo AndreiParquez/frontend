@@ -6,7 +6,7 @@ import { HomeIcon, ChatBubbleBottomCenterTextIcon, FireIcon, Cog6ToothIcon, Info
 
 const Sidebar = () => {
   return (
-    <aside className="fixed h-screen w-64 darkblue text-white hidden md:block">
+    <aside className="fixed h-full w-64 darkblue text-white hidden md:block">
       <div className="bg-zinc-900 m-7 rounded-lg overflow-hidden">
         <div className="bg-cover bg-center w-full h-20" style={{ backgroundImage: `url(${cover})` }}></div>
         <div className="p-3">

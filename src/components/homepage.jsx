@@ -1,5 +1,6 @@
 import React from 'react';
 import Sidebar from './sidebar';
+
 import Footer from './footer';
 import cover from '../assets/dappimg.png';  
 import logo from '../assets/dapplogo.png'; 
@@ -17,6 +18,8 @@ const Homepage = () => {
       <div className="flex min-h-screen md:mt-16 lg:mt-10 mt-16  bg-orange-400  text-sm">
         <Sidebar />
         <div className="md:ml-64 flex-1 p-4 md:p-3 lg:p-10 bg-orange-400">  
+
+         
             
             <div className="blue flex shadows justify-between text-white items-end rounded-lg ">
 

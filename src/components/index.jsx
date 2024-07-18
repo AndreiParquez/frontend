@@ -7,6 +7,8 @@ import signin from '../assets/signin.png';
 function Index() {
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showAccountModal, setShowAccountModal] = useState(false);
+  const navigate = useNavigate();
+
 
   const toggleLoginModal = () => {
     setShowLoginModal(!showLoginModal);
@@ -14,6 +16,10 @@ function Index() {
 
   const toggleAccountModal = () => {
     setShowAccountModal(!showAccountModal);
+  };
+
+  const goToHomePage = () => {
+    navigate('/home');
   };
 
   return (
@@ -32,7 +38,7 @@ function Index() {
           <p className='text-white font-bold mt-2 text-center text-sm md:text-sm'>Curate your favorite dApps, engage with the community, review and earn $DP.</p>
           </div>
           <div className='flex space-x-4'>
-            <button className='bg-orange-500 text-black rounded-lg p-3 font-bold text-sm md:text-sm shadow' onClick={toggleLoginModal}>Go to Home</button>
+            <button className='bg-orange-500 text-black rounded-lg p-3 font-bold text-sm md:text-sm shadow' onClick={goToHomePage}>Go to Home</button>
             <button className='bg-white text-black rounded-lg p-3 font-bold text-sm md:text-sm shadow' onClick={toggleAccountModal}>Explore dApps!</button>
           </div>
         </div>

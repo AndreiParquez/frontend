@@ -1,5 +1,6 @@
 import React from 'react';
 import Sidebar from './sidebar';
+import Featured from './featured';
 
 import Footer from './footer';
 import cover from '../assets/dappimg.png';  
@@ -102,6 +103,7 @@ const Homepage = () => {
               <p className="text-sm">ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
           </div>
+          <Featured />
           <Footer />
         </div>
         

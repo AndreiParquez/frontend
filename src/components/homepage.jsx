@@ -22,7 +22,6 @@ const Homepage = () => {
 
             <img src={hero} alt="Game Logo" className="md:h-32 h-28 lg:h-52   rounded-lg m-2" />
 
-              <img src={hero} alt="Game Logo" className="md:h-32 h-28 lg:h-52   rounded-lg m-2" />
               
             </div>
 

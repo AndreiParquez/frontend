@@ -13,7 +13,7 @@ import hero4 from '../assets/kyd-final-miners.svg';
 const Homepage = () => {
   return (
     <>
-      <div className="flex min-h-screen mt-20 text-sm">
+      <div className="flex min-h-screen md:mt-20 lg:mt-10 mt-20  bg-orange-400  text-sm">
         <Sidebar />
         <div className="md:ml-64 flex-1 p-4 md:p-3 lg:p-10 bg-orange-400">
 

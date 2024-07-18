@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineClose, AiOutlineSearch } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { IoMenu } from "react-icons/io5";
 import logo from '../assets/2.png';
 import avatar from '../assets/cj.png';
 import cover from '../assets/cover.png';
 import { HomeIcon, ChatBubbleBottomCenterTextIcon, FireIcon, Cog6ToothIcon, InformationCircleIcon, PencilIcon } from '@heroicons/react/24/solid';
-
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -25,72 +24,78 @@ const Navbar = () => {
                 </div>
                 <div className='flex mx-auto md:mx-0'>
                     <img src={logo} alt="Game Logo" className="h-8" />
-                    <a className='text-xl flex items-center'>
+                    <a className='md:text-xl flex items-center text-base'>
                         knowyour<span className='text-orange-500'>d</span><span className='textwhite'>app</span>
                     </a>
                 </div>
-
-            </div>
-            <div className={`fixed top-0 left-0 w-full h-full darkblue flex flex-col justify-center items-start transform ${nav ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-20`}>
-            <div className="bg-zinc-900     w-full overflow-hidden">
-                <div className="bg-cover bg-center  h-28" style={{ backgroundImage: `url(${cover})` }}></div>
-                <div className="p-3">
-                    <div className="flex items-center mt-[-60px] space-x-2">
-                    <img src={avatar} alt="profile" className="w-24 h-24 rounded-full border-4 border-zinc-900 mt-5" />
-                    <h1 className="text-center text-xl  font-bold mt-9">Andrei R. Parquez</h1>
-                    </div>
-                    <div className="flex justify-center items-center m-4">
-                    <div className="flex mb-5 ml-2 space-x-6">
-                        <div className='text-center'>
-                        <p className='text-sm font-bold'>120</p>
-                        <p className='text-xs'>Reviews</p>
-                        </div>
-                        <div className='text-center'>
-                        <p className='text-sm font-bold'>120</p>
-                        <p className='text-xs'>Upvotes</p>
-                        </div>
-                        <div className='text-center'>
-                        <p className='text-sm font-bold'>120</p>
-                        <p className='text-xs'>Curations</p>
-                        </div>
-                        <div className='text-center'>
-                        <p className='text-sm font-bold'>120</p>
-                        <p className='text-xs'>Reputation</p>
-                        </div>
-                    </div>
-                   
-                    </div>
-                    <button className="w-1/2 h-11 mx-auto font-bold mb-2 bg-blue-500 text-white rounded-lg mt-5 flex justify-center items-center">
-                    <PencilIcon className="w-5 h-5 mr-2 font-bold" />
-                    Edit Profile
-                    </button>
+                <div className='flex items-center ml-4 relative'>
+                    <input 
+                        type='text' 
+                        placeholder='Search' 
+                        className='px-5 py-2 rounded-full placeholder:text-gray-400 darkblue border-2 border-zinc-300 focus:outline-none text-xs focus:ring-2 focus:ring-blue-500 w-full md:w-64'
+                    />
+                    <AiOutlineSearch className='absolute  text-2xl right-2 top-1/2 transform -translate-y-1/2 text-orange-400' />
                 </div>
             </div>
-        <nav className="mt-1 w-full">
-          <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
-            <HomeIcon className="w-7 h-7 mr-3" />
-            Dashboard
-          </a>
-          <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
-            <FireIcon className="w-7 h-7 mr-3" />
-            Explore
-          </a>
-          <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
-            <ChatBubbleBottomCenterTextIcon className="w-7 h-7 mr-3" />
-            Feed
-          </a>
-          <a href="#" className="flex items-center text-center justify-center text-black font-bold py-2.5 px-7 bg-orange-400 m-5 mx-9 rounded-lg transition duration-200 hover:bg-blue-800 hover:text-white">
-            Curate Now
-          </a>
-          <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
-            <Cog6ToothIcon className="w-7 h-7 mr-3" />
-            Settings
-          </a>
-          <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
-            <InformationCircleIcon className="w-7 h-7 mr-3" />
-            About
-          </a>
-        </nav>
+            <div className={`fixed top-0 left-0 w-full h-full darkblue flex flex-col justify-center items-start transform ${nav ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-20`}>
+                <div className="bg-zinc-900 w-full overflow-hidden">
+                    <div className="bg-cover bg-center h-28" style={{ backgroundImage: `url(${cover})` }}></div>
+                    <div className="p-3">
+                        <div className="flex items-center mt-[-60px] space-x-2">
+                            <img src={avatar} alt="profile" className="w-24 h-24 rounded-full border-8 border-zinc-900 mt-5" />
+                            <h1 className="text-center text-xl font-bold mt-9">Andrei R. Parquez</h1>
+                        </div>
+                        <div className="flex justify-center items-center m-4">
+                            <div className="flex mb-5 ml-2 space-x-6">
+                                <div className='text-center'>
+                                    <p className=' font-bold'>120</p>
+                                    <p className='text-xs'>Reviews</p>
+                                </div>
+                                <div className='text-center'>
+                                    <p className=' font-bold'>120</p>
+                                    <p className='text-xs'>Upvotes</p>
+                                </div>
+                                <div className='text-center'>
+                                    <p className=' font-bold'>120</p>
+                                    <p className='text-xs'>Curations</p>
+                                </div>
+                                <div className='text-center'>
+                                    <p className=' font-bold'>120</p>
+                                    <p className='text-xs'>Reputation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button className="w-1/2 h-11 mx-auto font-bold mb-2 bg-blue-500 text-white rounded-lg mt-5 flex justify-center items-center">
+                            <PencilIcon className="w-5 h-5 mr-2 font-bold" />
+                            Edit Profile
+                        </button>
+                    </div>
+                </div>
+                <nav className="mt-1 w-full">
+                    <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
+                        <HomeIcon className="w-7 h-7 mr-3" />
+                        Dashboard
+                    </a>
+                    <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
+                        <FireIcon className="w-7 h-7 mr-3" />
+                        Explore
+                    </a>
+                    <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
+                        <ChatBubbleBottomCenterTextIcon className="w-7 h-7 mr-3" />
+                        Feed
+                    </a>
+                    <a href="#" className="flex items-center text-center justify-center text-black font-bold py-2.5 px-7 bg-orange-400 m-5 mx-9 rounded-lg transition duration-200 hover:bg-blue-800 hover:text-white">
+                        Curate Now
+                    </a>
+                    <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
+                        <Cog6ToothIcon className="w-7 h-7 mr-3" />
+                        Settings
+                    </a>
+                    <a href="#" className="flex items-center py-2.5 px-7 transition duration-200 hover:bg-blue-800 hover:text-white">
+                        <InformationCircleIcon className="w-7 h-7 mr-3" />
+                        About
+                    </a>
+                </nav>
             </div>
         </div>
     );

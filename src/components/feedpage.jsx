@@ -17,7 +17,7 @@ const FeedPage = () => {
   return (
     <div className="flex min-h-screen md:mt-16 lg:mt-10 mt-16 bg-orange-400 text-sm">
       <Sidebar />
-      <div className="md:ml-64 flex-1 p-1 md:p-3 lg:p-10 bg-orange-400">
+      <div className="md:ml-64 flex-1 p-1 md:p-3 lg:px-56  lg:p-10 bg-orange-400">
 
 
 
@@ -99,8 +99,8 @@ const FeedPage = () => {
             It’s a good dex. A wonderful platform with low slippage, allowing me to swap tokens with ease. Totally recommended!
               </div>
              <div className="flex mt-4 space-x-3">
-            <button className="px-3 h-7 rounded-lg bg-blue-400  text-white f text-xs lex items-center justify-center">Button</button>
-            <button className="px-3 h-7 rounded-lg bg-blue-400  text-white f text-xs lex items-center justify-center">Button</button>
+            <button className="px-3 h-7 rounded-lg bg-blue-500  text-white f text-xs lex items-center justify-center">Button</button>
+            <button className="px-3 h-7 rounded-lg bg-blue-500  text-white f text-xs lex items-center justify-center">Button</button>
 
             </div>
           </div>
@@ -142,8 +142,8 @@ const FeedPage = () => {
             @Pixels is better than other p2e games, but needs more UI and to be more user friendly. 
               </div>
              <div className="flex mt-4 space-x-3">
-            <button className="px-3 h-7 rounded-lg bg-blue-400  text-white f text-xs lex items-center justify-center">Button</button>
-            <button className="px-3 h-7 rounded-lg bg-blue-400  text-white f text-xs lex items-center justify-center">Button</button>
+            <button className="px-3 h-7 rounded-lg bg-blue-500  text-white f text-xs lex items-center justify-center">Button</button>
+            <button className="px-3 h-7 rounded-lg bg-blue-500  text-white f text-xs lex items-center justify-center">Button</button>
             </div>
           </div>
 
@@ -165,8 +165,8 @@ const FeedPage = () => {
               I agree my friendy-frog!
                 </div>
               <div className="flex mt-4 space-x-3">
-              <button className="px-3 h-7 rounded-lg bg-blue-400  text-white f text-xs lex items-center justify-center">Button</button>
-              <button className="px-3 h-7 rounded-lg bg-blue-400  text-white f text-xs lex items-center justify-center">Button</button>
+              <button className="px-3 h-7 rounded-lg bg-blue-500  text-white f text-xs lex items-center justify-center">Button</button>
+              <button className="px-3 h-7 rounded-lg bg-blue-500  text-white f text-xs lex items-center justify-center">Button</button>
               </div>
               </div>
             </div>
@@ -214,8 +214,8 @@ const FeedPage = () => {
             <img src={avatar} alt="avatar" className=" rounded " />
               </div>
              <div className="flex mt-4 space-x-3">
-            <button className="px-3 h-7 rounded-lg bg-blue-400  text-white f text-xs lex items-center justify-center">Button</button>
-            <button className="px-3 h-7 rounded-lg bg-blue-400  text-white f text-xs lex items-center justify-center">Button</button>
+            <button className="px-3 h-7 rounded-lg bg-blue-500  text-white f text-xs lex items-center justify-center">Button</button>
+            <button className="px-3 h-7 rounded-lg bg-blue-500  text-white f text-xs lex items-center justify-center">Button</button>
 
             </div>
           </div>

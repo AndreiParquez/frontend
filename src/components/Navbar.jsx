@@ -7,11 +7,13 @@ import avatar from '../assets/cj.png';
 import cover from '../assets/cover.png';
 import { HomeIcon, ChatBubbleBottomCenterTextIcon, FireIcon, Cog6ToothIcon, InformationCircleIcon, PencilIcon } from '@heroicons/react/24/solid';
 
-const Navbar = () => {
+const Navbar = ({ toggleLoginModal }) => {
     const [nav, setNav] = useState(false);
+
     const toggleNav = () => {
         setNav(!nav);
     };
+
     const closeNav = () => {
         setNav(false);
     };
@@ -35,6 +37,14 @@ const Navbar = () => {
                         className='px-5 py-2 rounded-full placeholder:text-gray-400 darkblue border-2 border-zinc-300 focus:outline-none text-xs focus:ring-2 focus:ring-blue-500 w-full md:w-64'
                     />
                     <AiOutlineSearch className='absolute  text-2xl right-2 top-1/2 transform -translate-y-1/2 text-orange-400' />
+                </div>
+                <div className='ml-4'>
+                    <button 
+                        onClick={toggleLoginModal} 
+                        className="px-4 py-2 rounded-full bg-orange-500 hover:bg-orange-600 transition-colors text-white"
+                    >
+                        Login
+                    </button>
                 </div>
             </div>
             <div className={`fixed top-0 left-0 w-full h-full darkblue flex flex-col justify-center items-start transform ${nav ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out z-20`}>
